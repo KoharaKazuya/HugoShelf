@@ -1,0 +1,15 @@
+<header>
+  <div class="head-logo">
+    <div class="title-background">
+      <h1>{{ .Site.Title }}</h1>
+      <aside>{{ .Site.Params.description }}</aside>
+      <address>
+        {{ with .Site.Author.mail }}<a href="mailto:{{ . }}"><i class="fa fa-envelope-o"></i></a>{{ end }}
+        {{ with .Site.Author.twitter }}<a href="//twitter.com/{{ . }}"><i class="fa fa-twitter"></i></a>{{ end }}
+        {{ with .Site.Author.github }}<a href="//github.com/{{ . }}"><i class="fa fa-github-alt"></i></a>{{ end }}
+        {{ with .Site.Author.blog }}<a href="{{ . }}"><i class="fa fa-pencil"></i></a>{{ end }}
+        <a href="/index.xml"><i class="fa fa-rss"></i></a>
+      </address>
+    </div>
+  </div>
+</header>

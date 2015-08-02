@@ -1,0 +1,12 @@
+<section class="preview-line memo">
+  <header>
+    <h2><a href="/memo/">
+      <i class="fa fa-list-alt"></i> メモ
+    </a></h2>
+  </header>
+  <main>
+    {{ range where .Data.Pages "Section" "memo" }}
+    {{ partial "previewline/articles" . }}
+    {{ end }}
+  </main>
+</section>

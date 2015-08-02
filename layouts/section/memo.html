@@ -1,0 +1,20 @@
+{{ partial "header" . }}
+
+{{ partial "headbar" . }}
+
+<main class="page">
+
+  <section class="memo">
+    <header>
+      <h2><i class="fa fa-list-alt"></i> メモ</h2>
+    </header>
+    <main>
+      {{ range where .Data.Pages "Section" "memo" }}
+      {{ partial "article" . }}
+      {{ end }}
+    </main>
+  </section>
+
+</main>
+
+{{ partial "footer" . }}

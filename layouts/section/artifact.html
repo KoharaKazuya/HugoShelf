@@ -1,0 +1,20 @@
+{{ partial "header" . }}
+
+{{ partial "headbar" . }}
+
+<main class="page">
+
+  <section class="artifact">
+    <header>
+      <h2><i class="fa fa-check-square"></i> 作ったもの</h2>
+    </header>
+    <main>
+      {{ range where .Data.Pages "Section" "artifact" }}
+      {{ partial "article" . }}
+      {{ end }}
+    </main>
+  </section>
+
+</main>
+
+{{ partial "footer" . }}

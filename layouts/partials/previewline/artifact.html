@@ -1,0 +1,12 @@
+<section class="preview-line artifact">
+  <header>
+    <h2><a href="/artifact/">
+      <i class="fa fa-check-square"></i> 作ったもの
+    </a></h2>
+  </header>
+  <main>
+    {{ range where .Data.Pages "Section" "artifact" }}
+    {{ partial "previewline/articles" . }}
+    {{ end }}
+  </main>
+</section>

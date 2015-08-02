@@ -1,0 +1,9 @@
+<a href="{{ .Permalink }}">
+  <article class="line-article">
+    <span class="thumbnail" style="background-image: url({{ .Params.thumbnail }})"></span>
+    <div class="description">
+      <h3><span class="date">{{ .Date.Format "2006/1/2" }}</span> {{ .Title }}</h3>
+      <p>{{ .Summary }}</p>
+    </div>
+  </article>
+</a>
